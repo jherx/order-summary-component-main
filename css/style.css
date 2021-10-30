@@ -1,34 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&family=Zen+Kurenaido&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&family=Zen+Kurenaido&display=swap");
 
-:root{
-    /* colors */
-    /*? primarios  */
-    --Pale_blue: hsl(225, 100%, 94%);
-    --Bright_blue: hsl(245, 75%, 52%);
-    /* Neutral */
-    --Very_pale_blue: hsl(225, 100%, 98%);
-    --Desaturated_blue: hsl(224, 23%, 55%);
-    --Dark_blue: hsl(223, 47%, 23%);
-    /*tfonts  */
-    --red_hat:'Red Hat Display';
-    --Kurenaido:'Zen Kurenaido', sans-serif;
+:root {
+  /* colors */
+  /*? primarios  */
+  --Pale_blue: hsl(225, 100%, 94%);
+  --Bright_blue: hsl(245, 75%, 52%);
+  /* Neutral */
+  --Very_pale_blue: hsl(225, 100%, 98%);
+  --Desaturated_blue: hsl(224, 23%, 55%);
+  --Dark_blue: hsl(223, 47%, 23%);
+  /*tfonts  */
+  --red_hat: "Red Hat Display";
+  --Kurenaido: "Zen Kurenaido", sans-serif;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-size: 16px;
-    font-family: var(--red_hat);  
+body {
+  font-size: 16px;
+  font-family: var(--red_hat);
+  background: var(--Pale_blue) url(/images/pattern-background-mobile.svg) no-repeat;
+  background-size: 100vw;
 }
+
 .attribution {
-    font-size: 11px;
-    text-align: center;
-    font-family: var(--Kurenaido)
-  }
-  .attribution a {
-    color:var(--Desaturated_blue)
-  }
+  font-size: 11px;
+  text-align: center;
+  font-family: var(--Kurenaido);
+}
+.attribution a {
+  color: var(--Desaturated_blue);
+}
 
-  
+.Main {
+  margin: 10px;
+  padding: 5px;
+  /* grid */
+  display: grid;
+  grid-template-columns: repeat(1fr);
+
+  /* wild */
+  width: 280px;
+}
+.background_Imag{
+
+}
+.text{
+
+}
+.textInformation_p{
+
+}
+.plan-container{
+
+}
+.icon-img{
+
+}
+.plan__a{
+
+}
+.btn{
+
+}
+.btnPrimary{
+
+}
+.btnCancel{
+
+}
