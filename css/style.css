@@ -45,10 +45,12 @@ body {
   width: 280px;
 }
 .background_Imag{
+width: 280px;
 
 }
 .text{
-
+font-size: 1rem;
+font-weight: 500;
 }
 .textInformation_p{
 
