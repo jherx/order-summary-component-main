@@ -21,7 +21,8 @@
 body {
   font-size: 16px;
   font-family: var(--red_hat);
-  background: var(--Pale_blue) url(/images/pattern-background-mobile.svg) no-repeat;
+  background: var(--Pale_blue) url(/images/pattern-background-mobile.svg)
+    no-repeat;
   background-size: 100vw;
 }
 
@@ -35,41 +36,68 @@ body {
 }
 
 .Main {
-  margin: 10px;
-  padding: 5px;
+  margin: 20px 20px;
   /* grid */
   display: grid;
   grid-template-columns: repeat(1fr);
-
   /* wild */
-  width: 280px;
+  min-width: 280px;
+  border-radius: 10px 10px;
+  background: #fff;
 }
-.background_Imag{
-width: 280px;
+.wrapseccion_img {
+  min-width: 280px;
+}
+.wrapseccion__img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
 
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--Desaturated_blue);
 }
-.text{
-font-size: 1rem;
-font-weight: 500;
+.textTitle {
+  font-size: 1.25rem;
+  font-weight: 900;
 }
-.textInformation_p{
 
+.text,
+.textTitle {
+  text-align: center;
+  margin: 0.9375em;
 }
-.plan-container{
-
+.plan-container {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  background: var(--Very_pale_blue);
+  padding: 15px;
+  margin: 10px;
 }
-.icon-img{
-
+.icon-img {
 }
-.plan__a{
-
+.plan__a {
+  padding: 20px;
 }
-.btn{
-
+.btn {
+  height: 50px;
+  margin: 10px;
 }
-.btnPrimary{
-
+.btntxt{
+  font-size: 16px;
+  font-weight: 700;
 }
-.btnCancel{
-
+.btnPrimary {
+  border-radius: 10px;
+  box-shadow:  0px 15px 5px 0px rgba (0,0,0,0.66);
+  background: var(--Bright_blue);
+  color: #fff;
+}
+.btnCancel {
+  background: #fff;
+  border: none;
+  color: var(--Kurenaido);
 }
