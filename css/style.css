@@ -17,13 +17,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 body {
   font-size: 16px;
   font-family: var(--red_hat);
-  background: var(--Pale_blue) url(/images/pattern-background-mobile.svg)
-    no-repeat;
-  background-size: 100vw;
+  background: var(--Pale_blue);
+}
+.bgm{
+  position: absolute;
+  top: 0;
+  z-index: -1000000;
+  width: 100%;
 }
 
 .attribution {
@@ -39,7 +44,7 @@ body {
   margin: 20px 20px;
   /* grid */
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
   /* wild */
   min-width: 280px;
   border-radius: 10px 10px;
@@ -92,7 +97,7 @@ body {
 }
 .btnPrimary {
   border-radius: 10px;
-  box-shadow:  0px 15px 5px 0px rgba (0,0,0,0.66);
+  box-shadow:  0px 5px 5px 0px rgba(253, 252, 252, 0.66);
   background: var(--Bright_blue);
   color: #fff;
 }
@@ -101,3 +106,78 @@ body {
   border: none;
   color: var(--Kurenaido);
 }
+.bgd{
+  display: none;
+  }
+/* Mediaquerys */
+@media (min-width: 576px) { 
+  .Main{
+    max-width: 375px;
+  }
+ .bgm{
+  position: absolute;
+  top: 0;
+  z-index: -9990;
+  width: 100%;
+ }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .bgd{
+    display: none;
+  } 
+  .bgm{
+    display: inline;
+    position: absolute;
+    top: 0;
+    z-index: -111111110;
+    width: 100%;
+  }
+  .Main{
+    max-width: 375px;
+    margin: 50px auto;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  body{
+    background: var(--Pale_blue);
+  }
+  .bgm{
+    display: none;
+  }
+  .bgd{
+    display: inline;
+    position: absolute;
+    top: 0;
+    z-index: -111111111;
+  }
+  .Main{
+    position: relative;
+    max-width: 375px;
+    margin: 50px auto;
+  }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+  .Main{
+    position: relative;
+    max-width: 375px;
+    margin: 50px auto;
+  }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+ 
+
+  .Main{
+    position: relative;
+    max-width: 375px;
+    margin: 50px auto;
+  }
+ }
