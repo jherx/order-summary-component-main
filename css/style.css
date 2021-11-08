@@ -83,6 +83,7 @@ body {
   margin: 10px;
 }
 .icon-img {
+  min-width: 50px;
 }
 .plan__a {
   padding: 20px;
